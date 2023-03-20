@@ -1,8 +1,17 @@
 <template>
-    <lightning-card title="Hello Varanasi Software Junction" icon-name="custom:custom14">
+    <lightning-card title="Calculator" icon-name="custom:custom14">
       <div class="slds-m-around_medium">
-        <p>Hello, {greeting}!</p>
-        <lightning-input label="Name" value={greeting} onchange={changeHandler}></lightning-input>
+       
+        <h2>Double</h2>
+        <lightning-input label="A" value={a} onchange={changeA}></lightning-input>
+
+      </div>
+     
+      <div class="slds-m-around_medium">
+       
+        <p>Result= {result}</p>
+        <lightning-input label="Result" value={result} ></lightning-input>
+
       </div>
     </lightning-card>
   </template>

@@ -1,7 +1,10 @@
 import { LightningElement } from 'lwc';
 export default class HelloChampak extends LightningElement {
-  greeting = 'Champak';
-  changeHandler(event) {
-    this.greeting = event.target.value;
+  a=0;
+  result = 0;
+  changeA(event) {
+    this.a=event.target.value;
+    console.log(this.a);
+    this.result =2*this.a;
   }
 }
